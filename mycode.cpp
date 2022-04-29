@@ -102,7 +102,7 @@ public:
         }
 
 
-        int c = 0;
+        int c = 0; 
         int c2 = 0;
         for (int i = 0;i < length;i++)
         {
