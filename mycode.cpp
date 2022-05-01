@@ -56,6 +56,27 @@ public:
 
             }
         }
+        int seconedprocess, index;
+        process temp;
+        minvalue();
+        // sort list by Process Time
+        for (seconedprocess = 1; seconedprocess < length; seconedprocess++)
+        {
+            if (list[seconedprocess].AT < list[seconedprocess - 1].AT)
+            {
+                temp = list[seconedprocess];
+                index = seconedprocess;
+
+                do
+                {
+                    list[index] = list[index - 1];
+                    index--;
+
+                } while (index > 0 && list[index - 1].AT > temp.AT);
+                list[index] = temp;
+            }
+        }
+        gt=list[0].AT;
         file.close();
         temp1 = new process[length];
         temp2 = new process[length];
@@ -118,7 +139,7 @@ public:
                 temp1[c++] = list[i];
 
             }
-            else if (list[i].AT != mv)
+            else 
             {
                 if (gt < mv && c>c2)
                 {

@@ -1,12 +1,12 @@
-ABECD
+24531
 
-A: (response=0, turnaround=3, delay=0)
+1: (response=20, turnaround=30, delay=20)
 
-B: (response=1, turnaround=7, delay=1)
+2: (response=0, turnaround=12, delay=0)
 
-C: (response=7, turnaround=11, delay=7)
+3: (response=19, turnaround=27, delay=19)
 
-D: (response=9, turnaround=14, delay=9)
+4: (response=7, turnaround=11, delay=7)
 
-E: (response=1, turnaround=3, delay=1)
+5: (response=4, turnaround=10, delay=4)
 
